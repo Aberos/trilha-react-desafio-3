@@ -3,7 +3,6 @@ import { MdEmail, MdLock, MdPerson } from "react-icons/md";
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
-import { api } from "../../services/api";
 
 import { useForm } from "react-hook-form";
 
@@ -31,12 +30,7 @@ const Register = () => {
     mode: "onChange",
   });
 
-  const onSubmit = async (formData) => {
-    try {
-    } catch (e) {
-      //TODO: HOUVE UM ERRO
-    }
-  };
+  const onSubmit = async (formData) => {};
 
   const handleLogin = () => {
     navigate("/login");
